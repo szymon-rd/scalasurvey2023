@@ -48,7 +48,7 @@ markup:
 params:
   author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
-  og_image: /images/tailbliss-cover.png
+  og_image: /images/survey.png
   moto: "by Scala Center and VirtusLab"
 
   disable_theme_toggle: true
