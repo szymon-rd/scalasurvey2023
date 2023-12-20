@@ -9,7 +9,7 @@
             {{ .Site.Title }}
           </h1>
           <h2 class="pb-2 text-3xl font-light text-gray-300 md:text-4xl">
-            {{ .Site.Params.Moto }}
+            {{ .Site.Params.Moto | safeHTML }}
           </h2>
           <p
             class="max-w-xl mx-auto mb-6 font-normal lg:mx-0 xl:mb-2 md:text-lg xl:text-xl text-gray-50">

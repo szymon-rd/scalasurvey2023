@@ -49,7 +49,7 @@ params:
   author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
   og_image: /images/survey.png
-  moto: "by Scala Center and VirtusLab"
+  moto: "by <a href='https://scala.epfl.ch/' class='text-white hover:underline'>Scala Center</a> and <a href='https://virtuslab.com' class='text-white hover:underline'>VirtusLab</a>"
 
   disable_theme_toggle: true
   disable_stay_uptodate: false
@@ -151,7 +151,7 @@ menu:
       url: https://virtuslab.com/
       weight: 20
     - identifier: scalacenter
-      name: ScalaCenter
+      name: Scala Center
       url: https://scala.epfl.ch/
       weight: 30
 
