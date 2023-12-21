@@ -5,16 +5,30 @@
       <div class="grid items-center gap-1 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
         <div class="col-span-6 px-4 text-center lg:text-left">
           <h1
-            class="mb-2 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-white">
+            class="mb-3 text-4xl font-extrabold leading-none tracking-tight text-white sm:mb-8 md:text-5xl xl:text-6xl">
             {{ .Site.Title }}
           </h1>
-          <h2 class="pb-2 text-3xl font-light text-gray-300 md:text-4xl">
-            {{ .Site.Params.Moto | safeHTML }}
-          </h2>
-          <p
+          <div class="flex flex-col items-center justify-center text-3xl font-light text-gray-300 sm:flex-row md:text-3xl lg:justify-normal">
+            {{ $sc_logo := resources.GetMatch "images/pages/scalacenter-logo.png" }}
+            {{ $vl_logo := resources.GetMatch "images/pages/vl_logo_wide_mono_contrast.png" }}
+
+            <div class="flex items-center">
+              by
+              <a href='https://scala.epfl.ch/' class="px-4 py-4 sm:py-0 scala-center">
+                <img src="{{ $sc_logo.RelPermalink }}" alt="Scala Center logo">
+              </a>
+            </div>
+            <div class="mt-3 flex items-center sm:mt-0">
+              and
+              <a href="https://virtuslab.com" class="virtuslab">
+                <img src="{{ $vl_logo.RelPermalink }}" alt="VirtusLab logo">
+              </a>
+            </div>
+          </div>
+          <!-- <p
             class="max-w-xl mx-auto mb-6 font-normal lg:mx-0 xl:mb-2 md:text-lg xl:text-xl text-gray-50">
             {{ .Site.Params.Description}}
-          </p>
+          </p> -->
         </div>
         <div class="col-span-6">
           {{ $hero := resources.GetMatch "images/pages/spiral-white.png" }}

@@ -6,6 +6,28 @@
     font-size: 1.25rem;
 }
 
+a.virtuslab {
+    margin-top: -33px;
+}
+
+a.scala-center,
+a.virtuslab {
+    opacity: 0.8;
+    transition: 0.2s opacity ease;
+}
+
+a.scala-center:hover,
+a.virtuslab:hover {
+    opacity: 1;
+}
+
+a.scala-center img,
+a.virtuslab img {
+    display: inline-block;
+    min-width: 200px;
+    max-width: 200px;
+}
+
 .poll-mono,
 .poll-multi {
     max-width: 100%;
